@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito&family=Orbitron&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    /* border: 1px solid grey; */
+    margin: 0;
+	padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    background-color: #F5F5F5;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav-links{
+    padding: 2%;
+    display: flex;
+    justify-content: flex-end;
+    background:#e0e0dc;
+}
+.nav-links a {
+    margin: 0 1%;
+    text-decoration: none;
+    color: grey;
+    /* background: grey; */
+    padding: 0.5% 1%;
+    border-radius: 5%;
+}
+
+.nav-links a:hover{
+    color: #a4cbdb;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 0 0 0;
+}
+h1{
+   font-family: 'Audiowide', cursive;
+   font-size: 4rem;
+   padding: 3%;
+}
+
+/*Top Section*/
+
+.header-img{
+    background-image: url(https://images.unsplash.com/photo-1559297434-fae8a1916a79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 2% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-button a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    font-size: 2.5rem;
+ 
+}
+
+.login-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    padding: 1% 4%;
+    border-radius: 5%;
+}
+.login-button:hover, .login-button a:hover{
+    background: white;
+    color: black;
+}
+
+/*How it works and culture*/
+
+#how-it-works, #culture{
+    display: flex;
+    margin: 0 2% 7% 2%;
+}
+#how-it-works img, #culture img{
+    width: 40%;
+    margin: 5% 3%;
+}
+
+#how-it-works img{
+    filter: grayscale(15%);
+}
+
+.text-container{
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 3rem;
+    justify-content: center;
+}
+.text-container p{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin: 3% 3% 0 3%;
+    font-family: 'Nunito', sans-serif;
+    padding: 2%;
+}
+
+.text-container h2{
+    margin: 5%;
+}
+
+.about-us{
+    background-image: url(https://images.unsplash.com/photo-1476067897447-d0c5df27b5df?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0 0 3% 0;
+}
+.about-button {
+    text-decoration: none;
+    font-size: 2rem;
+    background: black;
+    border-radius: 5%;
+    color: white;
+    padding: 2% 5%;
+}
+
+/*Contact Section*/
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 5%;
+    justify-content: center;
+    background:#e0e0dc;
+    margin-top: 3%;
+}
+.info{
+    width: 27%;
+    margin: 3%;
+}
+.links a, .links address{
+    line-height: 3rem;
+    text-decoration: none;
+    color: grey;
+}
+
+.links a:hover, .links address:hover{
+    color: #a4cbdb;
+}
+
+.contact h2{
+    font-size: 2rem;
+}
+
+
+/*Footer Section*/
+
+.footer-contact{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 3%;
+    justify-content: center;
+}
+.footer-contact a{
+    margin: 1%;
+    text-decoration: none;
+    color: white;
+    background: grey;
+    padding: 0.5% 1%;
+    border-radius: 5%;
+}
+
+
+
+
+/*Media Queries*/
+
+/*Landing Page at 800px*/
+
+@media (max-width: 800px){
+  
+    #how-it-works, #culture{
+        flex-direction: column;
+        align-items: center;
+        margin: 7% 3%;
+    }
+
+    #how-it-works img, #culture img {
+        width: 70%;
+    }
+
+    #culture h2{
+        margin: 5% 0 1% 0;
+    }
+
+    .contact{
+        margin-top: 7%;
+    }
+}
+
+/*Landing Page at 500px*/
+
+@media (max-width: 500px){
+
+    .title-container h1{
+       font-size: 3.8rem;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+}
+
+
